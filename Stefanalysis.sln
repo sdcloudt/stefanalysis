@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanalysis", "Stefanalysis\Stefanalysis\Stefanalysis.csproj", "{6B16C282-10D7-4CA9-8246-5AF2FCA3DACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanalysis", "Stefanalysis\Stefanalysis\Stefanalysis.csproj", "{6B16C282-10D7-4CA9-8246-5AF2FCA3DACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanalysis.CodeFixes", "Stefanalysis\Stefanalysis.CodeFixes\Stefanalysis.CodeFixes.csproj", "{DF2F7684-C09D-4DF5-BC74-717806B9462E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanalysis.CodeFixes", "Stefanalysis\Stefanalysis.CodeFixes\Stefanalysis.CodeFixes.csproj", "{DF2F7684-C09D-4DF5-BC74-717806B9462E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanalysis.Package", "Stefanalysis\Stefanalysis.Package\Stefanalysis.Package.csproj", "{B4A88AED-0F7A-4007-85FE-1B0E76AFA9ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanalysis.Package", "Stefanalysis\Stefanalysis.Package\Stefanalysis.Package.csproj", "{B4A88AED-0F7A-4007-85FE-1B0E76AFA9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanalysis.Test", "Stefanalysis\Stefanalysis.Test\Stefanalysis.Test.csproj", "{07370B66-A5B3-46B1-880C-87EC8AE9219D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanalysis.Test", "Stefanalysis\Stefanalysis.Test\Stefanalysis.Test.csproj", "{07370B66-A5B3-46B1-880C-87EC8AE9219D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanalysis.Vsix", "Stefanalysis\Stefanalysis.Vsix\Stefanalysis.Vsix.csproj", "{2383C054-939C-4C65-9466-BCD35D898561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanalysis.Vsix", "Stefanalysis\Stefanalysis.Vsix\Stefanalysis.Vsix.csproj", "{2383C054-939C-4C65-9466-BCD35D898561}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3EB5466B-C62C-4FCD-BD42-F8A2EAB09594}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
