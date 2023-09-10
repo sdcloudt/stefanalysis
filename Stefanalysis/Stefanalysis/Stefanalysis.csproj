@@ -2,10 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <IsPackable>false</IsPackable>
     <PackageId>Stefanalysis</PackageId>
     <Title>Some random analyzers</Title>
-    <Version>$(VersionPrefix)-alpha</Version>
+    <Version>1.0.0-alpha</Version>
     <Authors>S. D. Cloudt</Authors>
     <Company />
     <Description>Some random analyzers</Description>
@@ -15,6 +14,7 @@
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
