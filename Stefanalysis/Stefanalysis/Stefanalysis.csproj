@@ -3,9 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>false</IsPackable>
-
-    <!-- Avoid ID conflicts with the package project. -->
-    <PackageId>*$(MSBuildProjectFile)*</PackageId>
+    <PackageId>Stefanalysis</PackageId>
+    <Title>Some random analyzers</Title>
+    <Version>$(VersionPrefix)-alpha</Version>
+    <Authors>S. D. Cloudt</Authors>
+    <Company />
+    <Description>Some random analyzers</Description>
+    <PackageProjectUrl>https://github.com/sdcloudt/stefanalysis</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sdcloudt/stefanalysis</RepositoryUrl>
+    <PackageTags>task disposal; analyzer</PackageTags>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
