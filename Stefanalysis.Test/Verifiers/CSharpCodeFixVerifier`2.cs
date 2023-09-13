@@ -34,20 +34,17 @@ namespace Stefanalysis.Test
         }
 
         /// <inheritdoc cref="CodeFixVerifier{TAnalyzer, TCodeFix, TTest, TVerifier}.VerifyCodeFixAsync(string, string)"/>
-        public static async Task VerifyCodeFixAsync(string filepath, string fixedSource)
-            => await VerifyCodeFixAsync(filepath, DiagnosticResult.EmptyDiagnosticResults, fixedSource);
+        public static async Task VerifyCodeFixAsync(string sourceFilePath, string fixedSourceFilePath)
+            => await VerifyCodeFixAsync(sourceFilePath, DiagnosticResult.EmptyDiagnosticResults, fixedSourceFilePath);
 
         /// <inheritdoc cref="CodeFixVerifier{TAnalyzer, TCodeFix, TTest, TVerifier}.VerifyCodeFixAsync(string, DiagnosticResult, string)"/>
-        public static async Task VerifyCodeFixAsync(string filepath, DiagnosticResult expected, string fixedSource)
-            => await VerifyCodeFixAsync(filepath, new[] { expected }, fixedSource);
+        public static async Task VerifyCodeFixAsync(string sourceFilePath, DiagnosticResult expected, string fixedSourceFilePath)
+            => await VerifyCodeFixAsync(sourceFilePath, new[] { expected }, fixedSourceFilePath);
 
         /// <inheritdoc cref="CodeFixVerifier{TAnalyzer, TCodeFix, TTest, TVerifier}.VerifyCodeFixAsync(string, DiagnosticResult[], string)"/>
-        public static async Task VerifyCodeFixAsync(string filepath, DiagnosticResult[] expected, string fixedSource)
+        public static async Task VerifyCodeFixAsync(string sourceFilePath, DiagnosticResult[] expected, string fixedSourceFilePath)
         {
-            var test = new Test(filepath)
-            {
-                FixedCode = fixedSource,
-            };
+            var test = new Test(sourceFilePath, fixedSourceFilePath);
 
             test.ExpectedDiagnostics.AddRange(expected);
             await test.RunAsync(CancellationToken.None);

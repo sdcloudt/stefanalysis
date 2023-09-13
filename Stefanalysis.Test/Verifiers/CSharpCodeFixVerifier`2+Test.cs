@@ -12,9 +12,14 @@ namespace Stefanalysis.Test
     {
         public class Test : CSharpCodeFixTest<TAnalyzer, TCodeFix, MSTestVerifier>
         {
-            public Test(string filepath)
+            public Test(string sourceFilePath, string fixedSourceFilePath = null)
             {
-                TestState.Sources.Add((filepath, File.ReadAllText(filepath)));
+                TestState.Sources.Add((sourceFilePath, File.ReadAllText(sourceFilePath)));
+
+                if (fixedSourceFilePath != null)
+                {
+                    FixedState.Sources.Add((sourceFilePath, File.ReadAllText(fixedSourceFilePath)));
+                }
 
                 SolutionTransforms.Add((solution, projectId) =>
                 {
