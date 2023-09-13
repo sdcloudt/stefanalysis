@@ -9,10 +9,10 @@
 
   <PropertyGroup>
     <PackageId>Stefanalysis</PackageId>
-    <PackageVersion>1.0.0.2-alpha</PackageVersion>
+    <PackageVersion>1.0.0.3-beta</PackageVersion>
     <Authors>S. D. Cloudt</Authors>
     <Title>Stefanalysis: a collection of analyzers</Title>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
     <Company />
     <PackageProjectUrl>https://github.com/sdcloudt/stefanalysis</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sdcloudt/stefanalysis</RepositoryUrl>
